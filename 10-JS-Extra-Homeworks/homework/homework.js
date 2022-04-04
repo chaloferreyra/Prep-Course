@@ -10,6 +10,12 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  
+  const matriz = Object.keys(objeto).map(function(clave){
+      return [clave, objeto[clave]];
+  });
+  
+  return matriz;
 }
 
 
